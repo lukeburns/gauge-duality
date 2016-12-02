@@ -1,0 +1,250 @@
+\documentclass{article}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multicol}
+
+\title{Gauging Duality Transformations}
+\author{Luke Burns}
+
+\begin{document}
+  \maketitle
+
+  \section{Maxwell's Equations}
+
+  An electromagnetic field $F$ is a bivector valued field with vanishing curl. The four Maxwell equations are a consequence of this statement and are given by the single equation\footnote{See Equation 7.14 in Doran and Lasenby's Geometric Algebra for Physicists}
+
+  \begin{equation}
+    \nabla F = J,\label{eq:maxwell}
+  \end{equation}
+
+  where 
+
+  \begin{equation}
+    F = E + I B
+  \end{equation}
+
+  is a frame dependent decomposition of $F$ into a timelike bivector $E$ and spacelike bivector $IB$. In general, 
+
+  \begin{equation}
+    J = J_e + I J_b,\label{eq:current}
+  \end{equation}
+
+  where $J_e = \nabla \cdot F$ is a vector and $I J_b = \nabla \wedge F$ is a trivector. As suggested by notation, $J_e$ is the electrical current density, and $J_b$ is a hypothetical magnetic current density.
+
+  The restriction that $F$ has vanishing curl
+
+  \begin{equation}
+    \nabla \wedge F = 0\label{eq:constraint}
+  \end{equation}
+
+  is the same as requiring that $J_b = 0$. The ``generalized'' Maxwell's equations, without the constraint that $J_b=0$, are solely determined by the fact that $F$ is a bivector. In other words, \emph{any} bivector field contains a decomposition into electric and magnetic parts that satisfy the generalized Maxwell's equations (Equation \ref{eq:maxwell}).
+
+  \section{Generalized Potentials}
+
+  By allowing $F$ to be an arbitrary bivector field, it can be defined in terms of a potential $M$ as
+
+  \begin{equation}
+    F = \langle \nabla M \rangle_2,
+  \end{equation}
+
+  where the brackets are an indication to only take the bivector part of $\nabla M$.
+
+  $\nabla M$ only contains even grade terms if $M$ contains odd grade terms. Assuming $M$ contains no even terms (which would have no contribution to $F$), it is of the form
+
+  \begin{equation}
+    M = M_e + I M_b, \label{eq:potential}
+  \end{equation}
+
+   where $M_e$ is a vector and $I M_b$ is a trivector such that
+
+  \begin{equation}
+    F = \nabla \wedge M_e + \nabla \cdot I M_b,
+  \end{equation}
+
+  which ensures that the electric and magnetic source terms 
+
+  \begin{equation}
+    J_e = \nabla \cdot (\nabla \wedge M_e) \text{ and } J_b = \nabla \wedge (\nabla \cdot I M_b)
+  \end{equation} 
+
+  are sourced by the corresponding vector potentials $M_e$ and $M_b$.
+
+  \section{Duality Transformations}
+
+  A duality rotation of $F$
+
+  \begin{equation}
+    F \mapsto F e^{I \phi} = \cos(\theta) E - \sin(\theta) B + I(B \cos(\theta) + E \sin(\theta)),\label{eq:duality}
+  \end{equation}
+
+  mixes up electric and magnetic fields. If this is a global, constant transformation, then $J$ transforms identically
+
+  \begin{equation}
+    J \mapsto J e^{I \phi},
+  \end{equation}
+
+  which mixes up electric and magnetic sources. Because of this, the duality transformation does not preserve the physical content of the theory, and so cannot be considered a true symmetry of the equation (unless $J=0$). On the other hand, duality transformations are a \emph{formal} symmetry of Equation \ref{eq:maxwell}. And seeing that the presence of magnetic sources already challenges the physical integrity of $J$, it is arguably less wrong to call it a symmetry in the general case where $J$ includes magnetic sources.
+
+  For the case $J=0$, duality is a true global symmetry of Equation \ref{eq:maxwell}, so one might ask whether this symmetry can be promoted to a local symmetry. Interestingly, while Equation \ref{eq:maxwell} with $J=0$ is invariant under duality transformations, the standard Maxwell action is not. This has caused some confusion. \cite{saa} reviewed attempts of \cite{malik}, \cite{bunster}, and \cite{deser} to gauge this symmetry. \cite{bunster} and \cite{deser} concluded that duality symmetry could not be gauged, in contradiction to the result of \cite{malik}. \cite{saa} concluded that the discrepancy between these results was due to the fact that \cite{bunster} and \cite{deser} required preservation of gauge invariance, whereas \cite{malik} failed to take this into account (i.e. that the gauging process breaks gauge invariance of the original field).
+
+  The confusion is cleared up by introduction of a full multivector (complex) valued potential --- one that sources both electric \emph{and} magnetic sources. By this method, \cite{dressel}, \cite{tiwari}, and \cite{vasconcellos}  constructed dual symmetric Lagrangians. \cite{tiwari} and \cite{vasconcellos} went on to construct the same equations as \cite{malik} at the level of the action and generalized the result for the case where $J \not= 0$. 
+
+  Ultimately, the no-go conclusions reached by \cite{bunster} and \cite{deser} were due to the fact that the resulting gauge field introduces both electric \emph{and} magnetic sources into the Equation \ref{eq:maxwell}. This is the reason for both loss of gauge invariance and lack of local symmetry at the level of the action. The usual vector valued gauge field and Lagrangian enforce the absence of magnetic sources, whereas the resulting equations after gauging require the admission of magnetic sources. The potential defined by Equation \ref{eq:potential} does not suffer from this deficiency, and a dual symmetric Lagrangian (for the vaccum equations) can then be expressed as\cite{dressel}
+
+  \begin{equation}
+    \mathcal{L}_{\text{dual}} = \frac{1}{2}\langle (\nabla \wedge M_e)^2 + (\nabla \wedge M_b)^2 \rangle_0,
+  \end{equation}
+
+  whereas the traditional Lagrangian excludes the magnetic contribution
+
+  \begin{equation}
+    \mathcal{L}_\text{trad} = \langle (\nabla \wedge M_e)^2 \rangle_0.
+  \end{equation}
+
+  Here, we will present a derivation of the results of \cite{tiwari} and \cite{vasconcellos} at the field level, directly from Equation \ref{eq:maxwell}, without assuming Equation \ref{eq:constraint}. If we allow duality transformations to vary, letting $\phi = \phi(x)$, then we will pick up an extra term in the derivative
+
+  \begin{equation}
+    \nabla (F e^{I \phi}) = \nabla F e^{I \phi} - I \nabla \phi F e^{I\phi},
+  \end{equation}
+
+  where the negative sign is due to the fact that the pseudoscalar $I$ anticommutes with $\nabla$.
+
+  We can construct a covariant derviative $D$ with an added gauge field that transforms in such a way to absorb the contributions of this local symmetry to the derivative. Namely, $D$ must transform so that
+
+  \begin{equation}
+    D' F' = D' (F e^{I \phi}) = D F e^{I \phi}. \label{eq:covariant}
+  \end{equation}
+
+  %  J e^{I\phi} Again, the physical meaning of $J$ was unclear from the outset, so we will not dwell over the physical meaning of $Je^{I\phi}$.
+
+  To accomplish this, we'll tack on a term to the derivative
+
+  \begin{equation}
+    D = \nabla - I A
+  \end{equation}
+
+  that transforms as
+
+  \begin{equation}
+    A \mapsto A' = A - \nabla \phi\label{eq:gaugefreedom}
+  \end{equation}
+
+  in tandem with duality transformations. The quantity $A$ must be the same grade as $\nabla \phi$, so it is a vector whose curvature $F_A = \nabla \wedge A$ satisfies Maxwell's equations without magnetic sources.\footnote{Actually, it could technically include a trivector term and preserve the form of the equation. \cite{dressel} considered electromagnetic potentials of the form $A = A_e - I A_b$ with an additional gauge freedom. It may be interesting to try gauging duality plus ``scaling'' transformations of the form $e^{\phi_b + I \phi_e}$. These would then allow for magnetic sources.} Equation \ref{eq:gaugefreedom} is equivalent to
+
+  \begin{equation}
+    D \mapsto D' = D + I \nabla \phi,
+  \end{equation}
+
+  which ensures Equation \ref{eq:covariant} holds, yielding the equation
+
+  \begin{equation}
+    \nabla F - I A F = J,\label{eq:gauged}.
+  \end{equation}
+
+  Equation \ref{eq:gauged} is the same as the result of \cite{tiwari}, as well as \cite{malik} for the case $J=0$. Note, 
+
+  $IA$ itself is a pseudo-vector, and was correctly identified to transform as such by \cite{tiwari} , \cite{naik}, and \cite{malik}. Due to its transformation properties, \cite{naik}, \cite{malik}, and \cite{pmn} proposed that it gave rise to long-range spin interactions mediated by an axial vector boson (they called it an ``axial photon''). \cite{tiwari}  drew connections to axion electrodynamics. Identifying the gauge field
+
+  \begin{equation}
+    IA = \nabla I a,
+  \end{equation}
+
+  where $Ia$ is the pseudoscalar axion field, and requiring $J_b = 0$ and $A \cdot F = 0$ results in the equations of axion electrodynamics:
+
+  \begin{equation}
+    \nabla F = J_e + \nabla I a \cdot F.
+  \end{equation}
+
+  Interestingly, in this case, $A = -\nabla a$ is a gradient and implies that the curvature $F_A = \nabla \wedge A = 0$, which is normally considered to be absent of physical content.
+
+  The fact that $IA$ is a trivector is expected when compared with the U(1) gauge theory in quantum mechanics. Gauge theory usually involves operators $i \partial_\mu$ instead of just $\partial_\mu$. In this case, the pseudoscalar $I$ takes on the role of the unit imaginary $i$, since $I^2 = -1$, and plays the role as a duality map (the Hodge map) between vectors and pseudo-vectors.
+
+  The replacement 
+
+  \begin{equation}
+    D \mapsto - I D = -I \nabla - A = \gamma^\mu (I \partial_\mu - A_\mu)
+  \end{equation}
+
+  places the gauging procedure performed here and in quantum mechanics on comparable footing, and we can see that the gauge field here is no different from the U(1) gauge field of electromagnetism in Dirac theory.
+
+  This raises the question of whether the field $A$ can be identified directly with an electromagnetic field. From this perspective, the gauge field would not give rise to a new ``axial photon,'' as suggested by \cite{naik}, \cite{malik}, and \cite{pmn}. The gauge boson would simply be a photon. In which case, we'd left with a pair of coupled electromagnetic fields $F$ and $F_A = \nabla \wedge A$ interacting non-linearly.
+
+  % \section{Notes}
+
+  % I'm stuck. Feeling confused about some things. 
+
+  % Producing a covariant derivative is not sufficient for a successful gauging venture. The meaningful data must be unchanged by the transformation --- otherwise, it is not a symmetry. 
+
+  % One thought here was to allow the gauging process to guide the determination of what is physical. The prospect of a local duality symmetry is tantalizing, and it may be worthwhile to see what needs to be considered physical in order for it to be have local duality, particularly because only the vector part is physically meaningful generally, and a meaningful interpretation for general $J$ would be useful.
+
+  % By allowing $J$ to be affected by the gauge transformation $J e^{I\phi}$, physical quantities $F$ and $J$ necessarily change with $\phi$. This makes sense in Dirac theory, because $\psi$ itself is not directly observable. This theory would require that $F$ and $J$ not be directly observable quantities.
+
+  % What I want is for $A$ to be introduced, which is what this process did, but at the expense of the meaningfulness of $F$ and $J$.
+
+  % Now that Equation \ref{eq:gauged} has been derived, can simply choose to ignore duality transformations and treat $F$ and $J$ as usual?
+
+  % One situation where it might be redeemable is where $F$ is a circularly polarized electromagnetic wave. Even then, we're insisting that the locally varying phase shift is non-physical (aren't we?). Aren't phase differences responsible for 
+
+  % In Dirac theory, 
+
+  % \begin{equation}
+  %   \psi \mapsto \psi e^{I \sigma_3 \phi}
+  % \end{equation}
+
+  % is the locally varying phase shift, but this doesn't affect observables.
+
+  \begin{thebibliography}{9} 
+    \bibitem{dressel} 
+      J. Dressel, K. Y. Bliokh, and F. Norib.
+      \textit{Spacetime algebra as a powerful tool for electromagnetism}.
+      Physics Reports 589 (2015).
+
+    \bibitem{naik}
+      P. C. Naik and T. Pradhan.
+      \textit{Long-range interactions between spins}.
+      Journal of Physics A: Mathematical and General 14 (1981).
+
+    \bibitem{malik}
+      R. P. Malik and T. Pradhan 
+      \textit{Local Duality Invariance of Maxwell's Equations}.
+      Z. Phys. C - Particles and Fields 28 (1985).
+
+    \bibitem{pmn}
+      T. Pradhan, R. P. Malik, and P. C. Naik.
+      \textit{The fifth interaction: universal long range force between spins}.
+      Pramana 24 (1985). 
+
+    \bibitem{saa}
+      Alberto Saa.
+      \textit{Local electromagnetic duality and gauge invariance}.
+      Classical and Quantum Gravity 28 (2011).
+
+    \bibitem{bunster}
+      C.~Bunster and M.~Henneaux,
+        \emph{Can (Electric-Magnetic) Duality Be Gauged?}.
+        Phys. Rev. D 83, 045031 (2011).
+        arXiv:1011.5889.
+
+    \bibitem{deser}
+        S. Deser.
+        \emph{No local Maxwell duality invariance}.
+        Classical and Quantum Gravity
+        28 (2011).
+        arXiv:1012.5109.
+
+    \bibitem{tiwari}
+      S.C. Tiwari.
+      \emph{Axion electrodynamics in the duality perspective}
+      Modern Physics Letters A.
+      Vol. 30, No. 40 (2015).
+
+    \bibitem{vasconcellos}
+      C. A. Z. Vasconcellos and D. Hadjimichef.
+      \emph{CP Violation in Dual Dark Matter}.
+      Astron. Nachr. 335 (2014).
+      arXiv:1404.0409.
+
+  \end{thebibliography}
+
+\end{document}
