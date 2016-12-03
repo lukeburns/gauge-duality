@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" 
+"http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Gauging Duality Symmetry</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" />
+    <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" />
+    <!-- xhtml,fn-in,mathml,html -->
+    <meta name="src" content="maxwell.tex" />
+    <meta name="date" content="2016-12-02 22:30:00" />
+    <link rel="stylesheet" type="text/css" href="maxwell.css" />
+</head>
+
+<body>
+    <h2>Gauging Duality Symmetry</h2>
+    <p>This is a work in progress and will develop as my knowledge on the subject develops. See the <a href="https://github.com/lukeburns/gauge-duality/">Github repo</a> for the full version history, TeX source, <a href="https://github.com/lukeburns/gauge-duality/issues">issues</a>, and <a href="https://github.com/lukeburns/gauge-duality/blob/master/maxwell.pdf">pdf version</a>. (Refer to the pdf for the most recent version.) You're welcome to open an issue, or if you're feeling motivated, fork the repo and submit a pull request with corrections.</p>
+    <div>
+        <!--l. 13-->
+        <p class="noindent">
+        </p>
+        <!--l. 13-->
+        <p class="noindent"><span class="cmbx-9">Abstract</span></p>
+    </div>
+    <!--l. 13-->
+    <p> <span class="cmr-9">Duality  symmetry  of  the  generalized  Maxwell&#8217;s  equations  (with  magentic  sources)  is</span>
+        <span class="cmr-9">gauged. The curvature of the gauge field satisfies Maxwell&#8217;s equations (without magnetic</span>
+        <span class="cmr-9">sources).  It  is  suggested  that  the  coupling  could  describe  non-linear  interactions  between</span>
+        <span class="cmr-9">electromagnetic fields.</span>
+    </p>
+    <h3 class="sectionHead"><span class="titlemark"><span 
+class="cmr-9">1   </span></span> <a 
+ id="x1-10001"></a><span 
+class="cmr-9">Maxwell&#8217;s Equations</span></h3>
+    <!--l. 17-->
+    <p class="noindent"><span class="cmr-9">An electromagnetic field </span>
+        <!--l. 17-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math>
+        <span class="cmr-9">is a bivector valued field with vanishing curl. The four Maxwell equations are a consequence of this</span>
+        <span class="cmr-9">statement and are given by the single equation</span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xgap"><span 
+class="cmr-9">1</span></a><span class="cmr-9">]</span></span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-1001r1"></a>
+                <!--l. 19-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mi>J</mi>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(1)</span></td>
+        </tr>
+    </table>
+    <!--l. 23-->
+    <p class="indent"> <span class="cmr-9">where</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-1002r2"></a>
+                <!--l. 25-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mi>E</mi>
+                    <mo class="MathClass-bin">+</mo>
+                    <mi>I</mi>
+                    <mi>B</mi>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(2)</span></td>
+        </tr>
+    </table>
+    <!--l. 29-->
+    <p class="indent"> <span class="cmr-9">is a frame dependent decomposition of</span>
+        <!--l. 29-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math> <span class="cmr-9">into a timelike</span>
+        <span class="cmr-9">bivector </span>
+        <!--l. 29-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>E</mi>
+        </math> <span class="cmr-9">and</span>
+        <span class="cmr-9">spacelike bivector </span>
+        <!--l. 29-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+            <mi>B</mi>
+        </math><span class="cmr-9">.</span>
+        <span class="cmr-9">In general,</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-1003r3"></a>
+                <!--l. 31-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>J</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msub>
+                        <mrow>
+                            <mi>J</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-bin">+</mo>
+                    <mi>I</mi>
+                    <msub>
+                        <mrow>
+                            <mi>J</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>b</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(3)</span></td>
+        </tr>
+    </table>
+    <!--l. 35-->
+    <p class="indent"> <span class="cmr-9">where </span>
+        <!--l. 35-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>e</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mo class="MathClass-bin">&#x22C5;</mo>
+            <mi>F</mi>
+        </math> <span class="cmr-9">is a vector and</span>
+        <!--l. 35-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mo class="MathClass-bin">&#x2227;</mo>
+            <mi>F</mi>
+        </math> <span class="cmr-9">is a trivector. As suggested</span>
+        <span class="cmr-9">by notation, </span>
+        <!--l. 35-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>e</mi>
+                </mrow>
+            </msub>
+        </math> <span class="cmr-9">is the electrical</span>
+        <span class="cmr-9">current density, and </span>
+        <!--l. 35-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+        </math>
+        <span class="cmr-9">is a hypothetical magnetic current density.</span>
+    </p>
+    <!--l. 37-->
+    <p class="indent"> <span class="cmr-9">The restriction that </span>
+        <!--l. 37-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math>
+        <span class="cmr-9">has vanishing curl</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-1004r4"></a>
+                <!--l. 39-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">&#x2227;</mo>
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mn>0</mn>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(4)</span></td>
+        </tr>
+    </table>
+    <!--l. 43-->
+    <p class="indent"> <span class="cmr-9">is the same as requiring that </span>
+        <!--l. 43-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">.</span>
+        <span class="cmr-9">The &#8220;generalized&#8221; Maxwell&#8217;s equations, without the constraint that</span>
+        <!--l. 43-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">, are solely determined</span>
+        <span class="cmr-9">by the fact that </span>
+        <!--l. 43-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math>
+        <span class="cmr-9">is a bivector. In other words, </span><span class="cmti-9">any </span><span class="cmr-9">bivector field contains a decomposition into electric and magnetic</span>
+        <span class="cmr-9">parts that satisfy the generalized Maxwell&#8217;s equations (Equation </span><a href="#x1-1001r1"><span 
+class="cmr-9">1</span><!--tex4ht:ref: eq:maxwell --></a><span class="cmr-9">).</span>
+    </p>
+    <!--l. 45-->
+    <p class="noindent">
+    </p>
+    <h3 class="sectionHead"><span class="titlemark"><span 
+class="cmr-9">2   </span></span> <a 
+ id="x1-20002"></a><span 
+class="cmr-9">Generalized Potentials</span></h3>
+    <!--l. 47-->
+    <p class="noindent"><span class="cmr-9">By allowing </span>
+        <!--l. 47-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math>
+        <span class="cmr-9">to be an arbitrary bivector field, it can be defined in terms of a potential</span>
+        <!--l. 47-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>M</mi>
+        </math>
+        <span class="cmr-9">as</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-2001r5"></a>
+                <!--l. 49-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msub>
+                        <mrow>
+                            <mrow>
+                                <mo class="MathClass-open">&#x27E8;</mo>
+                                <mrow>
+                                    <mo class="MathClass-op">&#x2207;</mo>
+                                    <mi>M</mi>
+                                </mrow>
+                                <mo class="MathClass-close">&#x27E9;</mo>
+                            </mrow>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(5)</span></td>
+        </tr>
+    </table>
+    <!--l. 53-->
+    <p class="indent"> <span class="cmr-9">where the brackets are an indication to only take the bivector part of</span>
+        <!--l. 53-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mi>M</mi>
+        </math><span class="cmr-9">.</span>
+    </p>
+    <!--l. 55-->
+    <p class="indent">
+        <!--l. 55-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mi>M</mi>
+        </math> <span class="cmr-9">only contains even</span>
+        <span class="cmr-9">grade terms if </span>
+        <!--l. 55-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>M</mi>
+        </math> <span class="cmr-9">contains odd</span>
+        <span class="cmr-9">grade terms. Assuming </span>
+        <!--l. 55-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>M</mi>
+        </math>
+        <span class="cmr-9">contains no even terms (which would have no contribution to</span>
+        <!--l. 55-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math><span class="cmr-9">),</span>
+        <span class="cmr-9">it is of the form</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-2002r6"></a>
+                <!--l. 57-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>M</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msub>
+                        <mrow>
+                            <mi>M</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-bin">+</mo>
+                    <mi>I</mi>
+                    <msub>
+                        <mrow>
+                            <mi>M</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>b</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(6)</span></td>
+        </tr>
+    </table>
+    <!--l. 61-->
+    <p class="indent"> <span class="cmr-9">where </span>
+        <!--l. 61-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>M</mi>
+                </mrow>
+                <mrow>
+                    <mi>e</mi>
+                </mrow>
+            </msub>
+        </math> <span class="cmr-9">is</span>
+        <span class="cmr-9">a vector and </span>
+        <!--l. 61-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+            <msub>
+                <mrow>
+                    <mi>M</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+        </math>
+        <span class="cmr-9">is a trivector such that</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-2003r7"></a>
+                <!--l. 63-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msub>
+                        <mrow>
+                            <mi>F</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-bin">+</mo>
+                    <msub>
+                        <mrow>
+                            <mi>F</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>b</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">&#x2227;</mo>
+                    <msub>
+                        <mrow>
+                            <mi>M</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-bin">+</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">&#x22C5;</mo>
+                    <mi>I</mi>
+                    <msub>
+                        <mrow>
+                            <mi>M</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>b</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(7)</span></td>
+        </tr>
+    </table>
+    <!--l. 67-->
+    <p class="indent"> <span class="cmr-9">which ensures that the electric and magnetic source terms</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-2004r8"></a>
+                <!--l. 69-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <msub>
+                        <mrow>
+                            <mi>J</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">&#x22C5;</mo>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mo class="MathClass-op">&#x2207;</mo>
+                            <mo class="MathClass-bin">&#x2227;</mo>
+                            <msub>
+                                <mrow>
+                                    <mi>M</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>e</mi>
+                                </mrow>
+                            </msub>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mstyle class="text">
+                        <mtext>&#x00A0;and&#x00A0;</mtext>
+                    </mstyle>
+                    <msub>
+                        <mrow>
+                            <mi>J</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>b</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">&#x2227;</mo>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mo class="MathClass-op">&#x2207;</mo>
+                            <mo class="MathClass-bin">&#x22C5;</mo>
+                            <mi>I</mi>
+                            <msub>
+                                <mrow>
+                                    <mi>M</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>b</mi>
+                                </mrow>
+                            </msub>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(8)</span></td>
+        </tr>
+    </table>
+    <!--l. 73-->
+    <p class="indent"> <span class="cmr-9">are sourced by the corresponding vector potentials</span>
+        <!--l. 73-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>M</mi>
+                </mrow>
+                <mrow>
+                    <mi>e</mi>
+                </mrow>
+            </msub>
+        </math> <span class="cmr-9">and</span>
+        <!--l. 73-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>M</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+        </math><span class="cmr-9">. Note that</span>
+        <!--l. 73-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>M</mi>
+        </math> <span class="cmr-9">is the usual electromagnetic</span>
+        <span class="cmr-9">potential when </span>
+        <!--l. 73-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>M</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">.</span>
+        <span class="cmr-9">An identical construction can be found in </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdressel"><span 
+class="cmr-9">2</span></a><span class="cmr-9">]</span></span><span class="cmr-9">.</span>
+    </p>
+    <!--l. 75-->
+    <p class="noindent">
+    </p>
+    <h3 class="sectionHead"><span class="titlemark"><span 
+class="cmr-9">3   </span></span> <a 
+ id="x1-30003"></a><span 
+class="cmr-9">Duality Transformations</span></h3>
+    <!--l. 77-->
+    <p class="noindent"><span class="cmr-9">A duality rotation of </span>
+        <!--l. 77-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3001r9"></a>
+                <!--l. 79-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">&#x21A6;</mo>
+                    <mi>F</mi>
+                    <msup>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>I</mi>
+                            <mi>&#x03D5;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="qopname"> cos</mo>
+                    <!--nolimits-->
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mi>&#x03B8;</mi>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mi>E</mi>
+                    <mo class="MathClass-bin">-</mo>
+                    <mo class="qopname"> sin</mo>
+                    <!--nolimits-->
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mi>&#x03B8;</mi>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mi>B</mi>
+                    <mo class="MathClass-bin">+</mo>
+                    <mi>I</mi>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mi>B</mi>
+                            <mo class="qopname"> cos</mo>
+                            <!--nolimits-->
+                            <mrow>
+                                <mo class="MathClass-open">(</mo>
+                                <mrow>
+                                    <mi>&#x03B8;</mi>
+                                </mrow>
+                                <mo class="MathClass-close">)</mo>
+                            </mrow>
+                            <mo class="MathClass-bin">+</mo>
+                            <mi>E</mi>
+                            <mo class="qopname"> sin</mo>
+                            <!--nolimits-->
+                            <mrow>
+                                <mo class="MathClass-open">(</mo>
+                                <mrow>
+                                    <mi>&#x03B8;</mi>
+                                </mrow>
+                                <mo class="MathClass-close">)</mo>
+                            </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(9)</span></td>
+        </tr>
+    </table>
+    <!--l. 83-->
+    <p class="indent"> <span class="cmr-9">mixes up electric and magnetic fields. If this is a global, constant transformation, then</span>
+        <!--l. 83-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+        </math>
+        <span class="cmr-9">transforms identically</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3002r10"></a>
+                <!--l. 85-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>J</mi>
+                    <mo class="MathClass-rel">&#x21A6;</mo>
+                    <mi>J</mi>
+                    <msup>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>I</mi>
+                            <mi>&#x03D5;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(10)</span></td>
+        </tr>
+    </table>
+    <!--l. 89-->
+    <p class="indent"> <span class="cmr-9">which mixes up electric and magnetic sources. Because of this, the duality transformation does not preserve</span>
+        <span class="cmr-9">the physical content of the theory, and so cannot be considered a true symmetry of the equation (unless</span>
+        <!--l. 89-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">).</span>
+        <span class="cmr-9">On the other hand, duality transformations are a </span><span class="cmti-9">formal </span><span class="cmr-9">symmetry of Equation </span><a href="#x1-1001r1"><span 
+class="cmr-9">1</span><!--tex4ht:ref: eq:maxwell --></a><span class="cmr-9">. And</span>
+        <span class="cmr-9">seeing that the presence of magnetic sources already challenges the physical integrity of</span>
+        <!--l. 89-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+        </math><span class="cmr-9">,</span>
+        <span class="cmr-9">it is arguably less wrong to call it a symmetry in the general case where</span>
+        <!--l. 89-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+        </math>
+        <span class="cmr-9">includes magnetic sources.</span>
+    </p>
+    <!--l. 91-->
+    <p class="indent"> <span class="cmr-9">For the case </span>
+        <!--l. 91-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">,</span>
+        <span class="cmr-9">duality is a true global symmetry of Equation </span><a href="#x1-1001r1"><span 
+class="cmr-9">1</span><!--tex4ht:ref: eq:maxwell --></a><span class="cmr-9">, so one might ask whether this</span>
+        <span class="cmr-9">symmetry can be promoted to a local symmetry. Interestingly, while Equation </span><a href="#x1-1001r1"><span 
+class="cmr-9">1</span><!--tex4ht:ref: eq:maxwell --></a> <span class="cmr-9">with</span>
+        <!--l. 91-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math>
+        <span class="cmr-9">is invariant under duality transformations, the traditional (sourceless) Lagrangian is</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3003r11"></a>
+                <!--l. 93-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <msub>
+                        <mrow>
+                            <mi mathvariant="bold-script">L</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-rel">=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn>
+                        </mrow>
+                    </mfrac>
+                    <mrow>
+                        <mo class="MathClass-open">&#x27E8;</mo>
+                        <mrow>
+                            <msubsup>
+                                <mrow>
+                                    <mi>F</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>e</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </msubsup>
+                        </mrow>
+                        <mo class="MathClass-close">&#x27E9;</mo>
+                    </mrow>
+                    <mo class="MathClass-punc">.</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(11)</span></td>
+        </tr>
+    </table>
+    <!--l. 97-->
+    <p class="indent"> <span class="cmr-9">is </span><span class="cmti-9">not </span><span class="cmr-9">(brackets denote the scalar part). This has caused some confusion. </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xsaa"><span 
+class="cmr-9">3</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">reviewed attempts of</span>
+        <span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xbunster"><span 
+class="cmr-9">5</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdeser"><span 
+class="cmr-9">6</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">to gauge this symmetry. </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xbunster"><span 
+class="cmr-9">5</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdeser"><span 
+class="cmr-9">6</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">concluded that duality symmetry could not be</span>
+        <span class="cmr-9">gauged, in contradiction to the result of </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span><span class="cmr-9">. </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xsaa"><span 
+class="cmr-9">3</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">concluded that the discrepancy between these results</span>
+        <span class="cmr-9">was due to the fact that </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xbunster"><span 
+class="cmr-9">5</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdeser"><span 
+class="cmr-9">6</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">required preservation of gauge invariance, whereas </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">failed to</span>
+        <span class="cmr-9">take this into account (i.e. that the gauging process breaks gauge invariance of the original</span>
+        <span class="cmr-9">field).</span>
+    </p>
+    <!--l. 99-->
+    <p class="indent"> <span class="cmr-9">The confusion is cleared up by introduction of a full multivector (complex) valued</span>
+        <span class="cmr-9">potential &#8212; one that sources both electric </span><span class="cmti-9">and </span><span class="cmr-9">magnetic sources. By this method, </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdressel"><span 
+class="cmr-9">2</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xtiwari"><span 
+class="cmr-9">9</span></a><span class="cmr-9">]</span></span><span class="cmr-9">,</span>
+        <span class="cmr-9">and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xvasconcellos"><span 
+class="cmr-9">10</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">constructed dual symmetric Lagrangians. </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xtiwari"><span 
+class="cmr-9">9</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">went on to construct the same</span>
+        <span class="cmr-9">equations as </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">at the level of the action and generalized the result for the case where</span>
+        <!--l. 99-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+            <mo class="MathClass-rel">&#x2260;</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">,</span>
+        <span class="cmr-9">treating duality as a symmetry of the current density.</span>
+    </p>
+    <!--l. 101-->
+    <p class="indent"> <span class="cmr-9">Ultimately, the no-go conclusions reached by </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xbunster"><span 
+class="cmr-9">5</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdeser"><span 
+class="cmr-9">6</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">were due to the fact that the resulting</span>
+        <span class="cmr-9">gauge field introduces both electric </span><span class="cmti-9">and </span><span class="cmr-9">magnetic sources into the Equation </span><a href="#x1-1001r1"><span 
+class="cmr-9">1</span><!--tex4ht:ref: eq:maxwell --></a><span class="cmr-9">. This is</span>
+        <span class="cmr-9">the reason for both loss of gauge invariance and lack of local symmetry at the level of</span>
+        <span class="cmr-9">the action. The usual vector valued gauge field and Lagrangian enforce the absence of</span>
+        <span class="cmr-9">magnetic sources, whereas the resulting equations after gauging require the admission of</span>
+        <span class="cmr-9">magnetic sources. The potential defined by Equation </span><a href="#x1-2002r6"><span 
+class="cmr-9">6</span><!--tex4ht:ref: eq:potential --></a> <span class="cmr-9">does not suffer from this deficiency,</span>
+        <span class="cmr-9">and a dual symmetric Lagrangian (for the vaccum equations) can then be expressed</span>
+        <span class="cmr-9">as</span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xdressel"><span 
+class="cmr-9">2</span></a><span class="cmr-9">]</span></span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3004r12"></a>
+                <!--l. 103-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi mathvariant="bold-script">L</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn>
+                        </mrow>
+                    </mfrac>
+                    <mrow>
+                        <mo class="MathClass-open">&#x27E8;</mo>
+                        <mrow>
+                            <msubsup>
+                                <mrow>
+                                    <mi>F</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>e</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </msubsup>
+                            <mo class="MathClass-bin">+</mo>
+                            <msubsup>
+                                <mrow>
+                                    <mi>F</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>b</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </msubsup>
+                        </mrow>
+                        <mo class="MathClass-close">&#x27E9;</mo>
+                    </mrow>
+                    <mo class="MathClass-punc">.</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(12)</span></td>
+        </tr>
+    </table>
+    <!--l. 107-->
+    <p class="indent"> <span class="cmr-9">Here, we will present a derivation of the results of </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xtiwari"><span 
+class="cmr-9">9</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">at the field level, directly from Equation</span>
+        <a href="#x1-1001r1"><span 
+class="cmr-9">1</span><!--tex4ht:ref: eq:maxwell --></a><span class="cmr-9">, without assuming Equation </span><a href="#x1-1004r4"><span 
+class="cmr-9">4</span><!--tex4ht:ref: eq:constraint --></a><span class="cmr-9">. If we allow duality transformations to vary, letting</span>
+        <!--l. 107-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>&#x03D5;</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mi>&#x03D5;</mi>
+            <mrow>
+                <mo class="MathClass-open">(</mo>
+                <mrow>
+                    <mi>x</mi>
+                </mrow>
+                <mo class="MathClass-close">)</mo>
+            </mrow>
+        </math><span class="cmr-9">,</span>
+        <span class="cmr-9">then we will pick up an extra term in the derivative</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3005r13"></a>
+                <!--l. 109-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mi>F</mi>
+                            <msup>
+                                <mrow>
+                                    <mi>e</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>I</mi>
+                                    <mi>&#x03D5;</mi>
+                                </mrow>
+                            </msup>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>F</mi>
+                    <msup>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>I</mi>
+                            <mi>&#x03D5;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>I</mi>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>&#x03D5;</mi>
+                    <mi>F</mi>
+                    <msup>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>I</mi>
+                            <mi>&#x03D5;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(13)</span></td>
+        </tr>
+    </table>
+    <!--l. 113-->
+    <p class="indent"> <span class="cmr-9">where the negative sign is due to the fact that the pseudoscalar</span>
+        <!--l. 113-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+        </math> <span class="cmr-9">anticommutes</span>
+        <span class="cmr-9">with </span>
+        <!--l. 113-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mo class="MathClass-op">&#x2207;</mo>
+        </math><span class="cmr-9">.</span>
+    </p>
+    <!--l. 115-->
+    <p class="indent"> <span class="cmr-9">We can construct a covariant derviative</span>
+        <!--l. 115-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>D</mi>
+        </math> <span class="cmr-9">with an</span>
+        <span class="cmr-9">added gauge field that transforms in such a way to absorb the contributions of this local symmetry to the derivative.</span>
+        <span class="cmr-9">Namely, </span>
+        <!--l. 115-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>D</mi>
+        </math>
+        <span class="cmr-9">must transform so that</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3006r14"></a>
+                <!--l. 117-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <msup>
+                        <mrow>
+                            <mi>D</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>&prime;</mi>
+                        </mrow>
+                    </msup>
+                    <msup>
+                        <mrow>
+                            <mi>F</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>&prime;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-rel">=</mo>
+                    <msup>
+                        <mrow>
+                            <mi>D</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>&prime;</mi>
+                        </mrow>
+                    </msup>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mi>F</mi>
+                            <msup>
+                                <mrow>
+                                    <mi>e</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>I</mi>
+                                    <mi>&#x03D5;</mi>
+                                </mrow>
+                            </msup>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mo class="MathClass-rel">=</mo>
+                    <mi>D</mi>
+                    <mi>F</mi>
+                    <msup>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>I</mi>
+                            <mi>&#x03D5;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-punc">.</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(14)</span></td>
+        </tr>
+    </table>
+    <!--l. 121-->
+    <p class="indent"> <span class="cmr-9">To accomplish this, we&#8217;ll tack on a term to the derivative</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3007r15"></a>
+                <!--l. 123-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>D</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>I</mi>
+                    <mi>A</mi>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(15)</span></td>
+        </tr>
+    </table>
+    <!--l. 127-->
+    <p class="indent"> <span class="cmr-9">that transforms as</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3008r16"></a>
+                <!--l. 129-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>A</mi>
+                    <mo class="MathClass-rel">&#x21A6;</mo>
+                    <msup>
+                        <mrow>
+                            <mi>A</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>&prime;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-rel">=</mo>
+                    <mi>A</mi>
+                    <mo class="MathClass-bin">-</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>&#x03D5;</mi>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(16)</span></td>
+        </tr>
+    </table>
+    <!--l. 133-->
+    <p class="indent"> <span class="cmr-9">in tandem with duality transformations. The quantity</span>
+        <!--l. 133-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>A</mi>
+        </math> <span class="cmr-9">must be the same</span>
+        <span class="cmr-9">grade as </span>
+        <!--l. 133-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mi>&#x03D5;</mi>
+        </math><span class="cmr-9">, so it is a</span>
+        <span class="cmr-9">vector whose curvature </span>
+        <!--l. 133-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>F</mi>
+                </mrow>
+                <mrow>
+                    <mi>A</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mo class="MathClass-bin">&#x2227;</mo>
+            <mi>A</mi>
+        </math>
+        <span class="cmr-9">satisfies Maxwell&#8217;s equations without magnetic</span>
+        <span class="cmr-9">sources.</span><span class="footnote-mark"><a 
+href="#fn1x0" id="fn1x0-bk"><sup class="textsuperscript">1</sup></a></span>
+        <a id="x1-3009f1"></a>
+        <span class="cmr-9">Equation </span><a href="#x1-3008r16"><span 
+class="cmr-9">16</span><!--tex4ht:ref: eq:gaugefreedom --></a> <span class="cmr-9">is equivalent to</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3010r17"></a>
+                <!--l. 135-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>D</mi>
+                    <mo class="MathClass-rel">&#x21A6;</mo>
+                    <msup>
+                        <mrow>
+                            <mi>D</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>&prime;</mi>
+                        </mrow>
+                    </msup>
+                    <mo class="MathClass-rel">=</mo>
+                    <mi>D</mi>
+                    <mo class="MathClass-bin">+</mo>
+                    <mi>I</mi>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>&#x03D5;</mi>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(17)</span></td>
+        </tr>
+    </table>
+    <!--l. 139-->
+    <p class="indent"> <span class="cmr-9">which ensures Equation </span><a href="#x1-3006r14"><span 
+class="cmr-9">14</span><!--tex4ht:ref: eq:covariant --></a> <span class="cmr-9">holds, yielding the equation</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3011r18"></a>
+                <!--l. 141-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>F</mi>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>I</mi>
+                    <mi>A</mi>
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mi>J</mi>
+                    <mo class="MathClass-punc">,</mo>
+                    <mo class="MathClass-punc">.</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(18)</span></td>
+        </tr>
+    </table>
+    <!--l. 145-->
+    <p class="indent"> <span class="cmr-9">Equation </span><a href="#x1-3011r18"><span 
+class="cmr-9">18</span><!--tex4ht:ref: eq:gauged --></a> <span class="cmr-9">is the same as the result of </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xtiwari"><span 
+class="cmr-9">9</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, as well as </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">for the case</span>
+        <!--l. 145-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>J</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">.</span>
+    </p>
+    <!--l. 147-->
+    <p class="indent">
+        <!--l. 147-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+            <mi>A</mi>
+        </math>
+        <span class="cmr-9">itself is a pseudo-vector, and was correctly identified to transform as such by </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xtiwari"><span 
+class="cmr-9">9</span></a><span class="cmr-9">]</span></span><span class="cmr-9">. Due to its</span>
+        <span class="cmr-9">transformation properties, </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xnaik"><span 
+class="cmr-9">7</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xpmn"><span 
+class="cmr-9">8</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">proposed that it gave rise to long-range spin interactions</span>
+        <span class="cmr-9">mediated by an axial vector boson (they called it an &#8220;axial photon&#8221;). </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xtiwari"><span 
+class="cmr-9">9</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">drew connections</span>
+        <span class="cmr-9">to axion electrodynamics. </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xvasconcellos"><span 
+class="cmr-9">10</span></a><span class="cmr-9">]</span></span> <span class="cmr-9">constructed identified a relation to electroweak gauge</span>
+        <span class="cmr-9">fields.</span>
+    </p>
+    <!--l. 149-->
+    <p class="indent"> <span class="cmr-9">Identifying the gauge field</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3012r19"></a>
+                <!--l. 151-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>I</mi>
+                    <mi>A</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>I</mi>
+                    <mi>a</mi>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(19)</span></td>
+        </tr>
+    </table>
+    <!--l. 155-->
+    <p class="indent"> <span class="cmr-9">where </span>
+        <!--l. 155-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+            <mi>a</mi>
+        </math> <span class="cmr-9">is a pseudoscalar</span>
+        <span class="cmr-9">&#8220;axion&#8221; field, and requiring </span>
+        <!--l. 155-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math>
+        <span class="cmr-9">and </span>
+        <!--l. 155-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>A</mi>
+            <mo class="MathClass-bin">&#x22C5;</mo>
+            <mi>F</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math>
+        <span class="cmr-9">results in the equations of axion electrodynamics:</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3013r20"></a>
+                <!--l. 157-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msub>
+                        <mrow>
+                            <mi>J</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-bin">+</mo>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mo class="MathClass-op">&#x2207;</mo>
+                            <mi>I</mi>
+                            <mi>a</mi>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                    <mo class="MathClass-bin">&#x22C5;</mo>
+                    <mi>F</mi>
+                    <mo class="MathClass-punc">.</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(20)</span></td>
+        </tr>
+    </table>
+    <!--l. 161-->
+    <p class="indent"> <span class="cmr-9">Interestingly, in this case, </span>
+        <!--l. 161-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-bin">-</mo>
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mi>a</mi>
+        </math>
+        <span class="cmr-9">is a gradient of a scalar field, which implies that the curvature</span>
+        <!--l. 161-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>F</mi>
+                </mrow>
+                <mrow>
+                    <mi>A</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mo class="MathClass-bin">&#x2227;</mo>
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math><span class="cmr-9">.</span>
+        <span class="cmr-9">Normally, this field would be considered to be absent of physical content.</span>
+    </p>
+    <!--l. 163-->
+    <p class="indent"> <span class="cmr-9">The fact that </span>
+        <!--l. 163-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+            <mi>A</mi>
+        </math>
+        <span class="cmr-9">is a trivector is expected when compared with the U(1) gauge theory</span>
+        <span class="cmr-9">in quantum mechanics. Gauge theory usually involves operators</span>
+        <!--l. 163-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>i</mi>
+            <msub>
+                <mrow>
+                    <mi>&#x2202;</mi>
+                </mrow>
+                <mrow>
+                    <mi>&#x03BC;</mi>
+                </mrow>
+            </msub>
+        </math> <span class="cmr-9">instead of just</span>
+        <!--l. 163-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>&#x2202;</mi>
+                </mrow>
+                <mrow>
+                    <mi>&#x03BC;</mi>
+                </mrow>
+            </msub>
+        </math><span class="cmr-9">. In this case, the pseudoscalar</span>
+        <!--l. 163-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>I</mi>
+        </math> <span class="cmr-9">takes on the dual roles</span>
+        <span class="cmr-9">of the unit imaginary </span>
+        <!--l. 163-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>i</mi>
+        </math><span class="cmr-9">,</span>
+        <span class="cmr-9">since </span>
+        <!--l. 163-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msup>
+                <mrow>
+                    <mi>I</mi>
+                </mrow>
+                <mrow>
+                    <mn>2</mn>
+                </mrow>
+            </msup>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-bin">-</mo>
+            <mn>1</mn>
+        </math>
+        <span class="cmr-9">and of the duality (Hodge) map between vectors and pseudo-vectors.</span>
+    </p>
+    <!--l. 165-->
+    <p class="indent"> <span class="cmr-9">The replacement</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3014r21"></a>
+                <!--l. 167-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mi>D</mi>
+                    <mo class="MathClass-rel">&#x21A6;</mo>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>I</mi>
+                    <mi>D</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>I</mi>
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>A</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msup>
+                        <mrow>
+                            <mi>&#x03B3;</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>&#x03BC;</mi>
+                        </mrow>
+                    </msup>
+                    <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                            <mi>I</mi>
+                            <msub>
+                                <mrow>
+                                    <mi>&#x2202;</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>&#x03BC;</mi>
+                                </mrow>
+                            </msub>
+                            <mo class="MathClass-bin">-</mo>
+                            <msub>
+                                <mrow>
+                                    <mi>A</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>&#x03BC;</mi>
+                                </mrow>
+                            </msub>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                    </mrow>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(21)</span></td>
+        </tr>
+    </table>
+    <!--l. 171-->
+    <p class="indent"> <span class="cmr-9">places the gauging procedure performed here and in quantum mechanics on comparable footing,</span>
+        <span class="cmr-9">and we can see that the gauge field here is no different from the U(1) gauge field of electromagnetism</span>
+        <span class="cmr-9">in Dirac theory.</span>
+    </p>
+    <!--l. 173-->
+    <p class="indent"> <span class="cmr-9">This raises the question of whether the field</span>
+        <!--l. 173-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>A</mi>
+        </math>
+        <span class="cmr-9">can be identified directly with an electromagnetic field. From this perspective, the gauge field would</span>
+        <span class="cmr-9">not give rise to a new &#8220;axial photon,&#8221; as suggested by </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xmalik"><span 
+class="cmr-9">4</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xnaik"><span 
+class="cmr-9">7</span></a><span class="cmr-9">]</span></span><span class="cmr-9">, and </span><span class="cite"><span 
+class="cmr-9">[</span><a href="#Xpmn"><span 
+class="cmr-9">8</span></a><span class="cmr-9">]</span></span><span class="cmr-9">. The gauge boson would</span>
+        <span class="cmr-9">simply be a photon. In which case, we&#8217;d left with a pair of coupled electromagnetic fields</span>
+        <!--l. 173-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mi>F</mi>
+        </math> <span class="cmr-9">and</span>
+        <!--l. 173-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>F</mi>
+                </mrow>
+                <mrow>
+                    <mi>A</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mo class="MathClass-bin">&#x2227;</mo>
+            <mi>A</mi>
+        </math>
+        <span class="cmr-9">interacting non-linearly (this is at least already correct in the sense that</span>
+        <!--l. 173-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <msub>
+                <mrow>
+                    <mi>F</mi>
+                </mrow>
+                <mrow>
+                    <mi>A</mi>
+                </mrow>
+            </msub>
+        </math>
+        <span class="cmr-9">satisfies Maxwell&#8217;s equations). Physically comprehensible interactions that do not involve magnetic</span>
+        <span class="cmr-9">sources would be described by the equation</span>
+    </p>
+    <table class="equation">
+        <tr>
+            <td>
+                <a id="x1-3015r22"></a>
+                <!--l. 175-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="equation">
+                    <mo class="MathClass-op">&#x2207;</mo>
+                    <mi>F</mi>
+                    <mo class="MathClass-bin">-</mo>
+                    <mi>I</mi>
+                    <mi>A</mi>
+                    <mi>F</mi>
+                    <mo class="MathClass-rel">=</mo>
+                    <msub>
+                        <mrow>
+                            <mi>J</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>e</mi>
+                        </mrow>
+                    </msub>
+                    <mo class="MathClass-punc">,</mo>
+                </math>
+            </td>
+            <td class="eq-no"><span class="cmr-9">(22)</span></td>
+        </tr>
+    </table>
+    <!--l. 179-->
+    <p class="indent"> <span class="cmr-9">where the pseudovector part </span>
+        <!--l. 179-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mo class="MathClass-op">&#x2207;</mo>
+            <mo class="MathClass-bin">&#x2227;</mo>
+            <mi>F</mi>
+            <mo class="MathClass-bin">-</mo>
+            <mi>I</mi>
+            <mi>A</mi>
+            <mo class="MathClass-bin">&#x22C5;</mo>
+            <mi>F</mi>
+            <mo class="MathClass-rel">=</mo>
+            <msub>
+                <mrow>
+                    <mi>J</mi>
+                </mrow>
+                <mrow>
+                    <mi>b</mi>
+                </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+        </math>
+        <span class="cmr-9">vanishes.</span>
+    </p>
+    <!--l. 181-->
+    <p class="noindent">
+    </p>
+    <h3 class="likesectionHead"><a 
+ id="x1-40003"></a><span 
+class="cmr-9">References</span></h3>
+    <!--l. 181-->
+    <p class="noindent">
+    </p>
+    <div class="thebibliography">
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[1]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xgap"></a><span class="cmr-9">C. Doran and A. Lasenby. </span><span class="cmti-9">Geometric Algebra for Physicists</span><span class="cmr-9">. Cambridge University</span>
+            <span class="cmr-9">Press (2003).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[2]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xdressel"></a><span class="cmr-9">J.  Dressel,  K.  Y.  Bliokh,  and  F.  Norib.  </span><span class="cmti-9">Spacetime  algebra  as  a  powerful  tool  for</span>
+            <span class="cmti-9">electromagnetism</span><span class="cmr-9">. Physics Reports 589 (2015).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[3]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xsaa"></a><span class="cmr-9">Alberto  Saa.  </span><span class="cmti-9">Local  electromagnetic  duality  and  gauge  invariance</span><span class="cmr-9">.  Classical  and</span>
+            <span class="cmr-9">Quantum Gravity 28 (2011).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[4]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xmalik"></a><span class="cmr-9">R. P. Malik and T. Pradhan </span><span class="cmti-9">Local Duality Invariance of Maxwell&#8217;s Equations</span><span class="cmr-9">. Z. Phys.</span>
+            <span class="cmr-9">C - Particles and Fields 28 (1985).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[5]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xbunster"></a><span class="cmr-9">C.</span><span class="cmr-9">&#x00A0;Bunster and M.</span><span class="cmr-9">&#x00A0;Henneaux, </span><span class="cmti-9">Can (Electric-Magnetic) Duality Be Gauged?</span><span class="cmr-9">. Phys.</span>
+            <span class="cmr-9">Rev. D 83, 045031 (2011). arXiv:1011.5889.</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[6]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xdeser"></a><span class="cmr-9">S.  Deser.  </span><span class="cmti-9">No local Maxwell duality invariance</span><span class="cmr-9">.  Classical  and  Quantum  Gravity  28</span>
+            <span class="cmr-9">(2011). arXiv:1012.5109.</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[7]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xnaik"></a><span class="cmr-9">P. C. Naik and T. Pradhan. </span><span class="cmti-9">Long-range interactions between spins</span><span class="cmr-9">. Journal of Physics</span>
+            <span class="cmr-9">A: Mathematical and General 14 (1981).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[8]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xpmn"></a><span class="cmr-9">T. Pradhan, R. P. Malik, and P. C. Naik. </span><span class="cmti-9">The fifth interaction: universal long range</span>
+            <span class="cmti-9">force between spins</span><span class="cmr-9">. Pramana 24 (1985).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[9]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xtiwari"></a><span class="cmr-9">S.C. Tiwari. </span><span class="cmti-9">Axion electrodynamics in the duality perspective </span><span class="cmr-9">Modern Physics Letters</span>
+            <span class="cmr-9">A. Vol. 30, No. 40 (2015).</span>
+        </p>
+        <p class="bibitem"><span class="biblabel">
+ <span 
+class="cmr-9">[10]</span><span class="bibsp"><span 
+class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span><span class="cmr-9">&#x00A0;</span></span>
+            </span>
+            <a id="Xvasconcellos"></a><span class="cmr-9">C. A. Z. Vasconcellos and D. Hadjimichef. </span><span class="cmti-9">CP Violation in Dual Dark Matter</span><span class="cmr-9">. Astron.</span>
+            <span class="cmr-9">Nachr. 335 (2014). arXiv:1404.0409.</span>
+        </p>
+    </div>
+    <div class="footnotes">
+        <!--l. 133-->
+        <p class="indent"> <span class="footnote-mark"><a 
+href="#fn1x0-bk" id="fn1x0"><sup class="textsuperscript">1</sup></a></span><span class="cmr-8">Actually, it could technically include a trivector term and preserve the form of the</span>
+            <span class="cmr-8">equation. It may be interesting to try gauging duality plus &#8220;scaling&#8221; transformations of the form</span>
+            <!--l. 133-->
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <msup>
+                    <mrow>
+                        <mi>e</mi>
+                    </mrow>
+                    <mrow>
+                        <msub>
+                            <mrow>
+                                <mi>&#x03D5;</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>b</mi>
+                            </mrow>
+                        </msub>
+                        <mo class="MathClass-bin">+</mo>
+                        <mi>I</mi>
+                        <msub>
+                            <mrow>
+                                <mi>&#x03D5;</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>e</mi>
+                            </mrow>
+                        </msub>
+                    </mrow>
+                </msup>
+            </math><span class="cmr-8">.</span></p>
+    </div>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</body>
+
+</html>
