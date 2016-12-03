@@ -4,7 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{multicol}
 
-\title{Gauging Duality Transformations}
+\title{Gauging Duality Symmetry}
 \author{Luke Burns}
 
 \begin{document}
@@ -70,7 +70,7 @@
     J_e = \nabla \cdot (\nabla \wedge M_e) \text{ and } J_b = \nabla \wedge (\nabla \cdot I M_b)
   \end{equation} 
 
-  are sourced by the corresponding vector potentials $M_e$ and $M_b$. Note that $M$ is the usual electromagnetic potential when $M_b = 0$. An identical construction can be found in \cite{dressel}
+  are sourced by the corresponding vector potentials $M_e$ and $M_b$. Note that $M$ is the usual electromagnetic potential when $M_b = 0$. An identical construction can be found in \cite{dressel}.
 
   \section{Duality Transformations}
 
@@ -117,8 +117,6 @@
   \begin{equation}
     D' F' = D' (F e^{I \phi}) = D F e^{I \phi}. \label{eq:covariant}
   \end{equation}
-
-  %  J e^{I\phi} Again, the physical meaning of $J$ was unclear from the outset, so we will not dwell over the physical meaning of $Je^{I\phi}$.
 
   To accomplish this, we'll tack on a term to the derivative
 
@@ -179,30 +177,6 @@
   \end{equation}
 
   where the pseudovector part $\nabla \wedge F - I A \cdot F = J_b = 0$ vanishes.
-
-  % \section{Notes}
-
-  % I'm stuck. Feeling confused about some things. 
-
-  % Producing a covariant derivative is not sufficient for a successful gauging venture. The meaningful data must be unchanged by the transformation --- otherwise, it is not a symmetry. 
-
-  % One thought here was to allow the gauging process to guide the determination of what is physical. The prospect of a local duality symmetry is tantalizing, and it may be worthwhile to see what needs to be considered physical in order for it to be have local duality, particularly because only the vector part is physically meaningful generally, and a meaningful interpretation for general $J$ would be useful.
-
-  % By allowing $J$ to be affected by the gauge transformation $J e^{I\phi}$, physical quantities $F$ and $J$ necessarily change with $\phi$. This makes sense in Dirac theory, because $\psi$ itself is not directly observable. This theory would require that $F$ and $J$ not be directly observable quantities.
-
-  % What I want is for $A$ to be introduced, which is what this process did, but at the expense of the meaningfulness of $F$ and $J$.
-
-  % Now that Equation \ref{eq:gauged} has been derived, can simply choose to ignore duality transformations and treat $F$ and $J$ as usual?
-
-  % One situation where it might be redeemable is where $F$ is a circularly polarized electromagnetic wave. Even then, we're insisting that the locally varying phase shift is non-physical (aren't we?). Aren't phase differences responsible for 
-
-  % In Dirac theory, 
-
-  % \begin{equation}
-  %   \psi \mapsto \psi e^{I \sigma_3 \phi}
-  % \end{equation}
-
-  % is the locally varying phase shift, but this doesn't affect observables.
 
   \begin{thebibliography}{9} 
     \bibitem{gap} 
