@@ -88,21 +88,41 @@
 
   which mixes up electric and magnetic sources. Because of this, the duality transformation does not preserve the physical content of the theory, and so cannot be considered a true symmetry of the equation (unless $J=0$). On the other hand, duality transformations are a \emph{formal} symmetry of Equation \ref{eq:maxwell}. And seeing that the presence of magnetic sources already challenges the physical integrity of $J$, it is arguably less wrong to call it a symmetry in the general case where $J$ includes magnetic sources.
 
-  For the case $J=0$, duality is a true global symmetry of Equation \ref{eq:maxwell}, so one might ask whether this symmetry can be promoted to a local symmetry. Interestingly, while Equation \ref{eq:maxwell} with $J=0$ is invariant under duality transformations, the traditional (sourceless) Lagrangian is
+  For the case $J=0$, duality is a true global symmetry of Equation \ref{eq:maxwell}, so one might ask whether this symmetry can be promoted to a local symmetry. Interestingly, while Equation \ref{eq:maxwell} with $J=0$ is invariant under duality transformations, the traditional (sourceless) Lagrangian
 
   \begin{equation}
-    \mathcal{L}_e = \frac{1}{2} \langle F_e^2 \rangle.
+    \mathcal{L}_e = \frac{1}{2} \langle F_e^2 \rangle.\label{eq:elagrangian}
   \end{equation}
 
-  is \emph{not} (brackets denote the scalar part). This has caused some confusion. \cite{saa} reviewed attempts of \cite{malik}, \cite{bunster}, and \cite{deser} to gauge this symmetry. \cite{bunster} and \cite{deser} concluded that duality symmetry could not be gauged, in contradiction to the result of \cite{malik}. \cite{saa} concluded that the discrepancy between these results was due to the fact that \cite{bunster} and \cite{deser} required preservation of gauge invariance, whereas \cite{malik} failed to take this into account (i.e. that the gauging process breaks gauge invariance of the original field).
+  is \emph{not} (brackets denote the scalar part). This has caused some confusion regarding the possibility of gauging duality symmetry. 
 
-  The confusion is cleared up by introduction of a full multivector (complex) valued potential --- one that sources both electric \emph{and} magnetic sources. By this method, \cite{dressel}, \cite{tiwari}, and \cite{vasconcellos}  constructed dual symmetric Lagrangians. \cite{tiwari} went on to construct the same equations as \cite{malik} at the level of the action and generalized the result for the case where $J \not= 0$, treating duality as a symmetry of the current density. 
+  Additionally, \cite{saa} reviewed attempts of \cite{malik}, \cite{bunster}, and \cite{deser} to gauge this symmetry. \cite{bunster} and \cite{deser} concluded that duality symmetry could not be gauged, in contradiction to the result of \cite{malik}, who arrived at the equation
 
-  Ultimately, the no-go conclusions reached by \cite{bunster} and \cite{deser} were due to the fact that the resulting gauge field introduces both electric \emph{and} magnetic sources into the Equation \ref{eq:maxwell}. This is the reason for both loss of gauge invariance and lack of local symmetry at the level of the action. The usual vector valued gauge field and Lagrangian enforce the absence of magnetic sources, whereas the resulting equations after gauging require the admission of magnetic sources. The potential defined by Equation \ref{eq:potential} does not suffer from this deficiency, and a dual symmetric Lagrangian (for the vaccum equations) can then be expressed as\cite{dressel}
+  \begin{equation}
+    \nabla F = I A F,\label{eq:malik}
+  \end{equation}
+
+  where $J_A \equiv IAF$ behaves like a current, including magnetic sources.
+
+  \cite{saa} concluded that the discrepancy between these results was due to the fact that \cite{bunster} and \cite{deser} required preservation of gauge invariance, whereas \cite{malik} failed to consider this (i.e. that the gauging process breaks gauge invariance of the original field).  
+
+  However, the potential used in the argument of \cite{saa} was a complex 3-vector potential, which is guaranteed to satisfy the vacuum equations. Failure of gauge invariance is to be expected, seeing that Equation \ref{eq:malik} involves the electric and magnetic current density $J_A$.
+
+  The confusion is cleared up by introduction of a full multivector (complex) valued potential $M$ --- a potential for both electric and magnetic sources. By a similar method, \cite{dressel} and \cite{vasconcellos} constructed dual symmetric Lagrangians. \cite{cagc} showed that any multivector field $F$ has a potential $M$ if it is integrable (a dramatic generalization of the Helmholtz theorem), so we can be assured that the $M$ actually exists.
+
+  Ultimately, the no-go conclusions reached by \cite{bunster} and \cite{deser} were due to the fact that the resulting gauge field introduces both electric \emph{and} magnetic sources into the Equation \ref{eq:maxwell}. This is the reason for loss of gauge invariance and related to the lack of local symmetry at the level of the action. 
+
+  \cite{saa}, \cite{malik}, \cite{bunster}, and \cite{deser} only considered the vacuum equations. A potential for a vacuum field does not admit sources, so the vacuum gauge field description cannot continue to be used after gauging. Hence, loss of gauge invariance. 
+
+  The usual (sourceless) Lagrangian given by Equation \ref{eq:elagrangian} fails to be symmetric because it's missing its ``magnetic'' counterpart. A dual symmetric Lagrangian (for the vaccum equations) can be written\cite{dressel}
 
   \begin{equation}
     \mathcal{L} = \frac{1}{2}\langle F_e^2 + F_b^2 \rangle.
   \end{equation}
+
+  \cite{tiwari} constructed a dual symmetric Lagrangian by a different method and arrived at the same equations as \cite{malik} and generalized the result for the case where $J \not= 0$.
+
+  Note that the lack of symmetry of Equation \ref{eq:elagrangian} is a distinct issue from the loss of gauge invariance. To maintain gauge invariance, the potential must be promoted to a full multivector as in Equation \ref{eq:potential}.
 
   Here, we will present a derivation of the results of \cite{tiwari} at the field level, directly from Equation \ref{eq:maxwell}, without assuming Equation \ref{eq:constraint}. If we allow duality transformations to vary, letting $\phi = \phi(x)$, then we will pick up an extra term in the derivative
 
@@ -211,10 +231,10 @@
         28 (2011).
         arXiv:1012.5109.
 
-    \bibitem{naik}
-      P. C. Naik and T. Pradhan.
-      \emph{Long-range interactions between spins}.
-      Journal of Physics A: Mathematical and General 14 (1981).
+    \bibitem{cagc}
+      D. Hestenes.
+      \emph{Clifford algebra to geometric calculus}.
+      D. Reidel Publishing Company (1984).
 
     \bibitem{pmn}
       T. Pradhan, R. P. Malik, and P. C. Naik.
@@ -232,6 +252,11 @@
       \emph{CP Violation in Dual Dark Matter}.
       Astron. Nachr. 335 (2014).
       arXiv:1404.0409.
+
+    \bibitem{naik}
+      P. C. Naik and T. Pradhan.
+      \emph{Long-range interactions between spins}.
+      Journal of Physics A: Mathematical and General 14 (1981).
 
   \end{thebibliography}
 
