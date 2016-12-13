@@ -47,7 +47,7 @@
   By allowing $F$ to be an arbitrary bivector field, it can be defined in terms of a potential $M$ as
 
   \begin{equation}
-    F = \langle \nabla M \rangle_2,
+    F = \langle \nabla M \rangle_2, \label{eq:potential-eq}
   \end{equation}
 
   where the brackets are an indication to only take the bivector part of $\nabla M$.
@@ -84,7 +84,25 @@
     \phi = \phi_e + I \phi_b,
   \end{equation}
 
-  for scalar and pseudoscalar fields $\phi_e$ and $I \phi_b$. A similar construction can be found in \cite{dressel}. \cite{cagc} showed that any multivector field $F$ has an anti-derivative if it is integrable, so we can be assured that the $M$ actually exists.
+  for scalar and pseudoscalar fields $\phi_e$ and $I \phi_b$. A similar construction can be found in \cite{dressel}. \cite{cagc} showed that any multivector field $F$ has an anti-derivative if it is integrable, so we can be assured that the $M$ actually exists. Furthermore, we are guaranteed that the antiderivative $M$, before making any gauge transformations, satisfies
+
+  \begin{equation}
+    F = \nabla M = \nabla \wedge M_e + \nabla \cdot I M_b
+  \end{equation}
+
+  which automatically comes with the constraints
+
+  \begin{equation}
+    \nabla \cdot M_e = \nabla \wedge I M_b = 0,
+  \end{equation}
+
+  which is just the Lorenz gauge for both electric and magnetic potentials. $M$ is given explicitly by a generalized Cauchy's integral formula \cite{cagc}
+
+  \begin{equation}
+  M(x) = \int G(x, x') F(x') |d^{m}x'| - \oint G(x, x') n^{-1} d^{m-1}x' M(x')\right),
+\end{equation}
+
+where $n$ is the unit normal and $G$ is the green's function for $\nabla$.
 
   \section{Duality Transformations}
 
@@ -217,6 +235,11 @@
       C. Doran and A. Lasenby.
       \emph{Geometric Algebra for Physicists}. Cambridge University Press (2003).
 
+    \bibitem{cagc}
+      D. Hestenes.
+      \emph{Clifford algebra to geometric calculus}.
+      D. Reidel Publishing Company (1984).
+
     \bibitem{dressel} 
       J. Dressel, K. Y. Bliokh, and F. Norib.
       \emph{Spacetime algebra as a powerful tool for electromagnetism}.
@@ -244,11 +267,6 @@
         Classical and Quantum Gravity
         28 (2011).
         arXiv:1012.5109.
-
-    \bibitem{cagc}
-      D. Hestenes.
-      \emph{Clifford algebra to geometric calculus}.
-      D. Reidel Publishing Company (1984).
 
     \bibitem{pmn}
       T. Pradhan, R. P. Malik, and P. C. Naik.
