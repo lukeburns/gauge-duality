@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{multicol}
+\usepackage{hyperref}
 
 \title{Gauging Duality Symmetry}
 \author{Luke Burns}
@@ -10,7 +11,9 @@
 \begin{document}
   \maketitle
 
-  \abstract{It is shown that duality symmetry of the generalized Maxwell's equations (with magentic sources) can be gauged. Because the newly introduced gauge field is indistinguishable from an electromagnetic gauge field, it is suggested that the coupling could describe non-linear interactions between electromagnetic fields.}
+  \abstract{Duality symmetry of the generalized Maxwell's equations (with magentic sources) is gauged. Because the newly introduced gauge field is indistinguishable from an electromagnetic gauge field, it is suggested that the coupling could describe non-linear interactions between electromagnetic fields.}
+
+  \paragraph{Work In Progress} This paper is a work in progress, and is being openly developed on Github at \url{https://github.com/lukeburns/gauge-duality}. Contributions are warmly welcomed, whether by means of opening an issue or pull request.
 
   \section{Maxwell's Equations}
 
@@ -99,7 +102,7 @@
   which is just the Lorenz gauge for both electric and magnetic potentials. $M$ is given explicitly by a generalized Cauchy's integral formula \cite{cagc}
 
   \begin{equation}
-  M(x) = \int G(x, x') F(x') |d^{m}x'| - \oint G(x, x') n^{-1} d^{m-1}x' M(x')\right),
+  M(x) = \int G(x, x') F(x') |d^{m}x'| - \oint G(x, x') n^{-1} d^{m-1}x' M(x'),
 \end{equation}
 
 where $n$ is the unit normal and $G$ is the green's function for $\nabla$.
