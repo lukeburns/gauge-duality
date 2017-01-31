@@ -1,19 +1,28 @@
-\documentclass{article}
-\usepackage[margin=1.3in]{geometry}
+\documentclass[twocolumn]{article}
+\usepackage[margin=.7in]{geometry}
 \usepackage{amsmath}
+
+\usepackage{hyperref}
+\renewcommand{\abstractname}{\vspace{-\baselineskip}}
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+
 \usepackage{amsfonts}
 \usepackage{multicol}
-\usepackage{hyperref}
 
-\title{Gauging Duality Symmetry}
+\title{Can duality symmetry of Maxwell's equations be gauged?}
 \author{Luke Burns}
+\date{\small \today\vspace{-5ex}}
 
 \begin{document}
+\twocolumn[
+\begin{@twocolumnfalse}
   \maketitle
 
-  \abstract{Duality symmetry of the generalized Maxwell's equations (with magentic sources) is gauged. Because the newly introduced gauge field is indistinguishable from an electromagnetic gauge field, it is suggested that the coupling could describe non-linear interactions between electromagnetic fields.}
+  \abstract{It is argued that duality symmetry of the generalized Maxwell's equations (with magentic sources) \emph{can} be gauged in the usual way, and that arguments against incorrectly assume a particular form of potential or Lagrangian.}
 
-  \paragraph{Work In Progress} This paper is a work in progress, and is being openly developed on Github at \url{https://github.com/lukeburns/gauge-duality}. Contributions are warmly welcomed, whether by means of opening an issue or pull request.
+  \paragraph{Work In Progress} This paper is a work in progress and is being openly developed on Github at \url{https://github.com/lukeburns/gauge-duality}. Contributions are warmly welcomed, whether by means of opening an issue or pull request. \\
+\end{@twocolumnfalse} ]
 
   \section{Maxwell's Equations}
 
